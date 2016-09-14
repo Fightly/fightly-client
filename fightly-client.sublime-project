@@ -1,0 +1,9 @@
+{
+	"folders":
+	[
+		{
+			"path": "/home/adrian/git/fightly-client",
+            "folder_exclude_patterns": ["node_modules"]
+		}
+	]
+}

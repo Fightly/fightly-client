@@ -1,0 +1,22 @@
+{
+  "name": "fightly-client",
+  "version": "0.0.1",
+  "description": "Fightly Game Engine Client",
+  "main": "fightly.js",
+  "scripts": {
+    "build": "WEBPACK_ENV=build webpack",
+    "dev": "WEBPACK_ENV=dev webpack --progress --colors --watch",
+    "test": "mocha --compilers js:babel-core/register --colors -w ./test/*.spec.js"
+  },
+  "author": "Adrian Gaudebert",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.11.4",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.9.0",
+    "webpack": "^1.13.1"
+  },
+  "dependencies": {
+    "ensy": "^1.2.0"
+  }
+}

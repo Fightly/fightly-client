@@ -1,0 +1,22 @@
+Client Events
+
+- connected
+    network, emitted when successfully connected to the server
+
+- data
+    network, emitted when receiving data from the server
+
+- disconnection
+    network, emitted when the connection to the server is lost
+
+- ready
+    engine, emitted when the engine is ready and the game can be started
+
+- gameJoined
+    engine, emitted when the client has joined a game
+
+- gameStarted
+    engine, emitted when a game the client is in starts
+
+- gameEnded
+    engine, emitted when a game the client is in finishes
