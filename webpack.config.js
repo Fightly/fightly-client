@@ -1,6 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
-var srcPath = path.join(__dirname, 'lib');
+var srcPath = path.join(__dirname, 'src');
 
 var UglifyJsPlugin = webpack.optimize.UglifyJsPlugin;
 var env = process.env.WEBPACK_ENV;
