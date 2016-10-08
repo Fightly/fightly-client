@@ -17,6 +17,6 @@
     "webpack": "^1.13.1"
   },
   "dependencies": {
-    "ensy": "^1.2.0"
+    "ensy": "^1.2.1"
   }
 }

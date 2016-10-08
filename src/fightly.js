@@ -1,20 +1,18 @@
 import EntityManager from 'ensy';
 import EventEmitter from 'events';
 
-import ActionsFactory from './actions';
 import Engine from './engine';
 import Network from './network';
 
-function createApplication() {
+function createApplication(modules) {
     var emitter = new EventEmitter();
     var network = new Network(emitter);
-    var engine = new Engine(emitter, network);
     var manager = new EntityManager();
-    var actions = ActionsFactory(network);
+    var engine = new Engine(emitter, network, manager, modules);
 
     emitter.manager = manager;
     emitter.network = network;
-    emitter.actions = actions;
+    emitter.actions = {};
 
     Object.defineProperty(emitter, 'games', {
         get: function () {
